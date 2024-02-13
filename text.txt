@@ -1,0 +1,26 @@
+C'est qoui un framework (
+    js: deux interfaces logique et graphique, 
+    react: relation entre variable et partie graphique
+    (two-way binding)
+)
+SPA vs MPA
+React est un bibliothèque parceque tu peux prendre le lien cdn et utiliser comme bootstrap ou autre bibliothèque
+Angular js Ou Vue js sont des framework parceque tu base sur eux
+VsCode Extensions (EsLint, Prettier)
+Chrome Extensions (ReactDevTools)
+Install NodeJs
+npx create-react-app myapp
+Structure of files
+Delete uncessery files (index.html in public, none in src)
+Création index.js (App() entre index.js)
+explixation de root
+Création de App en autre fichier
+Jsx est un mélange entre javascript et html (
+    close tag "self close aussi"
+    tout entre 1 element html
+    {javascript ici (test number, variable, function and object)}
+)
+Styling in jsx (style={object})
+ClassName (condition entre {})
+Les composants
+Travaux Pratiques
