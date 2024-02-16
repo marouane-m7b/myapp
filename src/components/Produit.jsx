@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Produit() {
+function Produit({ image = "https://static.thenounproject.com/png/2503986-200.png", title = "produit", description = "pas de description" }) {
   const styles = {
     container: {
       width: "300px",
@@ -23,8 +23,9 @@ function Produit() {
   return (
     <>
       <div style={styles.container}>
-        <img style={{ width: "100%" }} src="/airpods.png" alt="" />
-        <h2>AirPods</h2>
+        <img style={{ width: "100%" }} src={image} alt="" />
+        <h2>{title}</h2>
+        <p>{description}</p>
         <div style={styles.buttonsContainer}>
           <div style={{ ...styles.buttons, backgroundColor: "blue" }}>Afficher</div>
           <div style={{ ...styles.buttons, backgroundColor: "red" }}>Supprimer</div>

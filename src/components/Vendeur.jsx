@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Vendeur() {
+function Vendeur({ image, nom, prenom, genre }) {
     const styles = {
         container: {
             width: "200px",
@@ -18,8 +18,8 @@ function Vendeur() {
     }
     return (
         <div style={styles.container}>
-            <img src="/profile.png" alt="" style={{ height: "100%" }} />
-            <div>Nom Prénom</div>
+            <img src={image ? image : (genre === "homme" ? "https://cdn-icons-png.flaticon.com/512/3135/3135715.png" : "https://cdn-icons-png.flaticon.com/256/3135/3135789.png")} alt="" style={{ height: "100%", borderRadius: "50%" }} />
+            <div>{nom} {prenom}</div>
         </div>
     )
 }
